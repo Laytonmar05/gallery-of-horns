@@ -1,17 +1,19 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import beastData from './beastData';
 
 class Main extends React.Component {
     render() {
         return (
-        <>
-            <p>Horned Beasts coming soon...</p>
+        <Container>
+            <Row xs={1} md={2} lg={3} xl={4}>
             {beastData.map((beast,idx)=> (
              <HornedBeast key={idx} beastObj={beast}/>
             ))}
-           
-        </>
+           </Row>
+        </Container>
         );
     }
 }

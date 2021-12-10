@@ -10,7 +10,7 @@ class HornedBeast extends React.Component {
                 src = {this.props.beastObj.image_url}
                 alt = {this.props.beastObj.description}
                 title = {this.props.beastObj.title}
-                style = {{width:'20%'}}
+                //style = {{width:'20%'}}
            />
                 <Card.Text>{this.props.beastObj.description}</Card.Text>
             </Card>
