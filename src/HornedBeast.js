@@ -23,7 +23,7 @@ import Card from 'react-bootstrap/Card';
                 title = {this.props.beastObj.title}
                 //style = {{width:'20%'}}
            />
-                <Card.Text>{this.props.beastObj.description}</Card.Text>
+                <Card.Text class= "beastDescription">{this.props.beastObj.description}</Card.Text>
                 <Card.Text>🔥 = {this.state.favorites}</Card.Text>
             </Card>
         );
